@@ -59,7 +59,6 @@ const allUser = async(req, res, next)=>{
             return res.status(400).send('Please all the fileds.')
         }
         if(email=='admin@backend.com' || password=='admin') {
-            console.log(email, password);
             const alluserData = await User.find();
             return res.status(200).json(alluserData);
         } else {
