@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const logStream = fs.createWriteStream(path.join(__dirname,"log.txt"),{
-    flags: "a" //append to the file
+    flags: "a" // a is used to append to the file
 })
 
 const errorStream = fs.createWriteStream(path.join(__dirname,"error.txt"),{
