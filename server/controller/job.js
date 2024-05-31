@@ -23,8 +23,17 @@ const createJob = async(req, res, next)=>{
 
 const fetchAllJob = async(req, res, next)=>{
     try {
-        const alljob = await Job.find();
-        res.status(200).send(alljob);
+        // START: based on skill param for search feature
+        const { skills } = req.query;
+        const skillsArray = skills != undefined ? skills.split(',').map((skill)=>skill.trim()) : null;
+        console.log(skills,  skillsArray === null);
+        if(skills?.length===0 || skillsArray === null) {
+            const alljob = await Job.find();
+            res.status(200).send(alljob);
+        } else {
+            const alljob = await Job.find({skills: {$in: skillsArray}});
+            res.status(200).send(alljob);
+        }
     }catch(err) {
         next(err);
     }

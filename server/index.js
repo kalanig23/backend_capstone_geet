@@ -1,10 +1,12 @@
-const port = 3000;
+const port = 4000;
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
 const fs = require('fs');
 const path = require('path');
+const env = require('dotenv');
+env.config();
 
 const logStream = fs.createWriteStream(path.join(__dirname,"log.txt"),{
     flags: "a" // a is used to append to the file
@@ -54,7 +56,7 @@ app.use((req, res, next)=>{
     res.status(404).send('Route not found')
 });
 
-mongoose.connect('mongodb+srv://geetkalani:geet123@cluster0.ofurypk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(process.env.MONGOOSE_URI)
         .then(()=>console.log('connected to DB'))
         .catch((err)=>console.log(err));
 
