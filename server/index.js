@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
+const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const env = require('dotenv');
@@ -19,6 +20,11 @@ const errorStream = fs.createWriteStream(path.join(__dirname,"error.txt"),{
 const authRoute = require('./routes/auth');
 const jobRoute = require('./routes/job');
 
+app.use(
+    cors({
+        origin: '*',
+    })
+);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
