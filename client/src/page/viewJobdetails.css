@@ -1,0 +1,233 @@
+.view-job-details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    margin: auto;
+}
+
+.title {
+    margin-right: 200px;
+    text-align: center;
+    top: 92px;
+    position: absolute;
+    background: white;
+    font-family:'DM Sans';
+    font-weight:500;
+    font-size:29px;
+    color:black;
+    padding:65px 100px;
+    box-shadow: 0px 4px 23px 2px #0000001A;
+    width: 65%;
+}
+
+.job-details {
+    padding:65px 175px;
+    box-shadow: 0px 4px 23px 2px #0000001A;
+    background-color: white;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.job-time-company {
+    display: flex;
+    font-family:'DM Sans';
+    font-weight:500;
+    font-size:20px;
+    color:#999999;
+}
+
+.week-ago {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.dot-symbol {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.job-type {
+    margin-right: 35px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.company-name {
+    margin-right: 15px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.job-title-location-edit {
+    display:flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.job-title-location {
+    display:flex;
+    flex-direction: column;
+}
+
+.job-title {
+    font-family:'DM Sans';
+    font-weight:700;
+    font-size:48px;
+    color:#000000;
+}
+
+.job-location {
+    font-family:'DM Sans';
+    font-weight:500;
+    font-size:21px;
+    color:#ED5353;
+}
+
+.edit-job-btn {
+    background: #ED5353;
+    border: 0;
+    color: white;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size:21px;
+    width: 161px;
+    height: 54px;
+    border-radius: 6px;
+    cursor: "pointer";
+}
+
+.stipend-duration {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+
+.stipend-main {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+    justify-content: space-between;
+}
+
+
+.stipend {
+    font-family:'DM Sans';
+    font-weight:400;
+    font-size:18px;
+    color:#999999;
+}
+
+.sal {
+    font-family:'DM Sans';
+    font-weight:500;
+    font-size:21px;
+    color:#595959;
+}
+
+.duration-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.duration {
+    font-family:'DM Sans';
+    font-weight:400;
+    font-size:18px;
+    color:#999999;
+}
+
+.duration-month {
+    font-family:'DM Sans';
+    font-weight:500;
+    font-size:21px;
+    color:#595959;
+}
+
+.about-company {
+    margin: 25px 0;
+}
+
+.about-title {
+    font-family:'DM Sans';
+    font-weight:700;
+    font-size:24px;
+    color:#000000;
+}
+
+.about-detail {
+    letter-spacing: 0.5px;
+    font-family:'DM Sans';
+    font-weight:400;
+    font-size:24px;
+    color:#595959;
+    margin: 25px 0;
+    text-align: justify;
+}
+
+.about-job-internship {
+    margin: 25px 0;
+}
+
+.about-job-internship-title {
+    font-family:'DM Sans';
+    font-weight:700;
+    font-size:24px;
+    color:#000000;
+}
+
+.about-job-internship-details {
+    letter-spacing: 0.5px;
+    font-family:'DM Sans';
+    font-weight:400;
+    font-size:24px;
+    color:#595959;
+    margin: 25px 0;
+    text-align: justify;
+}
+
+.skills-main {
+    margin: 25px 0;
+}
+
+.skills-title {
+    font-family:'DM Sans';
+    font-weight:700;
+    font-size:24px;
+    color:#000000;
+}
+
+.skills-list {
+    margin: 25px 10px;
+    background: #FFEEEE;
+    border: 0;
+    color: #595959;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size:24px;
+    padding: 10px 20px;
+    border-radius: 21px;
+    text-align: justify;
+}
+
+.additional-main {
+    margin: 25px 0;
+}
+
+.additional-title {
+    font-family:'DM Sans';
+    font-weight:700;
+    font-size:24px;
+    color:#000000;
+}
+
+.additional-details {
+    letter-spacing: 0.5px;
+    font-family:'DM Sans';
+    font-weight:400;
+    font-size:24px;
+    color:#595959;
+    margin: 25px 0;
+    text-align: justify;
+}

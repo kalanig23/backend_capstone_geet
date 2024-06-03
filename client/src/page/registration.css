@@ -1,0 +1,11 @@
+.registration-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 5%;
+}

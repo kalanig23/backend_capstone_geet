@@ -1,0 +1,18 @@
+.FormImage {
+    position: relative;
+    background-image: url("../assets/image466.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 38%;
+}
+
+.FormImage p {
+    font-family: 'DM Sans';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 57.61px;
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+    letter-spacing: 1px;
+}

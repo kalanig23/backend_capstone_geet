@@ -1,0 +1,109 @@
+.create-job-contaier {
+    display: flex;
+}
+
+.create-job-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.create-job-form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.create-job-form-part {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.create-job-form-part h3 {
+    font-family: 'DM Sans';
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.create-job-form-part div label {
+    font-family: 'DM Sans';
+    font-size: 23.34px;
+    font-weight: 400;
+    line-height: 30.38px;
+}
+
+.create-job-form-part div input, select {
+    font-family: 'DM Sans';
+    font-size: 15.65px;
+    font-weight: 500;
+    line-height: 20.38px;
+    border: 1.84px solid #C2C2C2;
+    border-radius: 4.6px;
+    padding-left: 15px;
+}
+
+.create-job-form-part div input {
+    width: 438.23px;
+    height: 38.67px;
+}
+
+.create-job-form-part div select {
+    width: 136.26px;
+    height: 38.67px;
+}
+
+.create-job-image-part {
+    background-image: url('../assets/WallpaperDog.png');
+    position: relative;
+    background-size: cover;
+    width: 50%;
+}
+
+.create-job-image-part p {
+    color: white;
+    font-family: 'DM Sans';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 57.61px;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+
+.create-cancel-job-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.cancel-job-btn {
+    width: 146.79px;
+    height: 42.66px;
+    border-radius: 6.51px;
+    border: 0.85px solid #CECECE;
+    border-color: #CECECE;
+    color: #C2C2C2;
+    font-family: 'Roboto';
+    font-size: 18.08px;
+    font-weight: 500;
+    line-height: 21.18px;
+    cursor: pointer;
+    border: 0;
+}
+
+.create-job-btn {
+    cursor: pointer;
+    width: 146.79px;
+    height: 42.66px;
+    border-radius: 6.51px;
+    background: #ED5353;
+    border-color: #ED5353;
+    border: 0;
+    font-family: 'Roboto';
+    font-size: 18.08px;
+    font-weight: 500;
+    line-height: 21.18px;
+    color: #FFFFFF;
+    margin-left: 50px;
+}

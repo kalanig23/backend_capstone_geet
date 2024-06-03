@@ -1,0 +1,62 @@
+.view-job-card {
+    box-shadow: 0px 0px 22px 4px #FF202040;
+    display: flex;
+    margin: 25px 0;
+}
+
+.view-job-card::before {
+    content: "";
+    border: solid red;
+}
+
+.job-logo {
+    width: 55px;
+    height: 55px;
+}
+
+.two {
+    margin: 0 25px;
+}
+
+.two p {
+    font-family: 'Roboto';
+    font-size: 19.49px;
+    font-weight: 500;
+}
+
+.two div span {
+    font-family: 'Roboto';
+    font-size: 15.1px;
+    font-weight: 500;
+    line-height: 13.47px;
+    color: #ED5353;
+    margin-right: 25px
+}
+
+.sub-two {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sub-two div {
+    margin-right: 20px;
+}
+
+.sub-two div span {
+    font-family: 'Roboto';
+    font-size: 18.38px;
+    font-weight: 500;
+    line-height: 16.39px;
+    color: #9C9C9C;
+    padding-left: 10px;
+}
+
+.section {
+    display: flex;
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

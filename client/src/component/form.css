@@ -1,0 +1,77 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.form-part h1 {
+    font-family: 'DM Sans';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    color: black;
+}
+
+.form-part p {
+    font-family: 'DM Sans';
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #525252;
+}
+
+.bottom-quote {
+    display: flex;
+}
+
+
+.form input {
+    border: 2px solid #C2C2C2;
+    color: #525252;
+    font-family: 'DM Sans';
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.form label { 
+    font-family: 'DM Sans';
+    font-size: 16.85px;
+    font-weight: 400;
+    line-height: 23.54px;
+    letter-spacing: 0.02em;
+    color: #525252;
+}
+.form button {
+    width: 277px;
+    height: 63px;
+    border-radius: 5px;
+    background-color: #ED5353;
+    border: #ED5353;
+    color: white;
+    font-family: 'DM Sans';
+    font-size: 27.79px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.bottom-quote h3 {
+    line-height: 3;
+    font-family:' DM Sans';
+    font-size: 21px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.bottom-quote h3:nth-child(1){
+    color: #525252;
+}
+
+.bottom-quote h3:nth-child(2){
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
