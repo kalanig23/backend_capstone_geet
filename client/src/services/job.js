@@ -18,3 +18,37 @@ export const getJobByJobId=async(jobId)=> {
         return err.response;
     }
 }
+
+export const createJob=async(data)=>{
+    try {
+        const response = await axios.post(`${BACKEND_URL}/api/job/createjob`,
+            data,
+           { 
+                headers: {
+                    "Content-Type":'application/json',
+                    "authorization": `${localStorage.getItem('token')}`
+                }
+            }
+        );
+        return response;
+    }catch(err){
+        return err.response;
+    }
+}
+
+export const updateJob=async(data, jobId)=>{
+    try {
+        const response = await axios.patch(`${BACKEND_URL}/api/job/updatejob/${jobId}`,
+            data,
+           { 
+                headers: {
+                    "Content-Type":'application/json',
+                    "authorization": `${localStorage.getItem('token')}`
+                }
+            }
+        );
+        return response;
+    }catch(err){
+        return err.response;
+    }
+}

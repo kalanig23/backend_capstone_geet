@@ -5,7 +5,7 @@ import nosofemplogo from '../assets/nosemployee.png';
 import rupeelogo from '../assets/rupeelogo.png';
 import locationlogo from '../assets/locationlogo.png';
 
-const ViewJobs = ({allJobdata, handleSwitch}) => {
+const ViewJobs = ({allJobdata, handleSwitch, handleEditJob}) => {
     return (
         <div className="view-job-card">
             <div style={{padding: 20, display: "flex", width: '100%', justifyContent: "space-between"}}>
@@ -35,11 +35,14 @@ const ViewJobs = ({allJobdata, handleSwitch}) => {
                 <div className="three">
                     <div style={{display: 'flex', flexDirection: "row"}}>
                         {allJobdata?.skills?.map((s,i)=>(
-                            <button style={{background: '#FFEEEE', border: 0, color: 'black', fontFamily: 'DM Sans', fontWeight: 500, fontSize:'15px', width: '95px', height: '33px', borderRadius: '5px', margin:'0 10px'}}>{s}</button>
+                            <button key={i} style={{background: '#FFEEEE', border: 0, color: 'black', fontFamily: 'DM Sans', fontWeight: 500, fontSize:'15px', width: '95px', height: '33px', borderRadius: '5px', margin:'0 10px'}}>{s}</button>
                         ))}
                     </div>
                     <div style={{display: "flex", justifyContent:'flex-end'}}>
-                        <button style={{background: 'white', border: '2px solid #ED5353', color: '#ED5353', fontFamily: 'DM Sans', fontWeight: 500, fontSize:'20px', width: '155px', height: '36px', borderRadius: '5px', cursor: "pointer", marginRight: '15px'}}>Edit Job</button>
+                        {
+                            localStorage.getItem('token') &&
+                            <button style={{background: 'white', border: '2px solid #ED5353', color: '#ED5353', fontFamily: 'DM Sans', fontWeight: 500, fontSize:'20px', width: '155px', height: '36px', borderRadius: '5px', cursor: "pointer", marginRight: '15px'}} onClick={()=>handleEditJob(allJobdata._id)}>Edit Job</button>
+                        }
                         <button style={{background: '#ED5353', border: 0, color: 'white', fontFamily: 'DM Sans', fontWeight: 500, fontSize:'20px', width: '155px', height: '36px', borderRadius: '5px', cursor: "pointer", marginRight: '15px'}} onClick={()=>handleSwitch(allJobdata._id)}>View Details</button>
                     </div>
                 </div>

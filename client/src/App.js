@@ -15,6 +15,8 @@ function App() {
             <Route path="/job" element={<Job/>}/>
             <Route path="/job/:id" element={<ViewJobDetails/>}/>
             <Route path="/createjob" element={<CreateJob/>}/>
+            <Route path="/editjob/:id" element={<CreateJob/>}/>
+            <Route path="*" element={<h1>Not Found</h1>}/>
         </Routes>
     </BrowserRouter>
   );

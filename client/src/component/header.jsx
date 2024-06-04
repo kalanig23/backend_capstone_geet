@@ -3,6 +3,7 @@ import ReactangleOne from '../assets/Rectangle.png';
 import ReactangleTwo from '../assets/Rectangles.png';
 import Reactanglethree from '../assets/Rectangless.png';
 import photo from '../assets/photo.png';
+import { useNavigate } from 'react-router-dom';
 
 const styles = {
     headermain: {
@@ -127,23 +128,39 @@ const styles = {
 };
 
 const Header = () => {
+    const navigate = useNavigate();
+
+    const handleSwitchRegister =() =>{
+        navigate('/registration');
+    }
+
+    const handleSwitchLogin =() =>{
+        navigate('/login');
+    }
+
+    const handleLogout = () => {
+        localStorage.clear();
+        navigate('/job');
+    }
+
     return(
         <div style={styles.headermain}>
             <div style={styles.headeroneomage}></div>
             <div style={styles.headertwoomage}></div>
             <div style={styles.headerthreeomage}></div>
             <div style={styles.title}>Jobfinder</div>
-            {/* logged out user ke liye */}
-            {/* <div style={{display: 'flex', flexDirection: 'row'}}>
-                <button style={styles.loginBtn}>Login</button>
-                <button style={styles.registerBtn}>Register</button>
-            </div> */}
-            {/* login user ke liye */}
-            <div style={{display: 'flex', flexDirection: 'row'}}>
-                <div style={styles.logout}>Logout</div>
-                <div style={styles.recruitername}>Hello! Recruiter</div>
-                <div style={styles.recruiterphoto}></div>
-            </div>
+            {localStorage.getItem('token') ? 
+                 <div style={{display: 'flex', flexDirection: 'row'}}>
+                    <div style={styles.logout} onClick={handleLogout}>Logout</div>
+                    <div style={styles.recruitername}>Hello! Recruiter</div>
+                    <div style={styles.recruiterphoto}></div>
+                </div> 
+             :
+                <div style={{display: 'flex', flexDirection: 'row'}}>
+                    <button style={styles.loginBtn} onClick={handleSwitchLogin}>Login</button>
+                    <button style={styles.registerBtn} onClick={handleSwitchRegister}>Register</button>
+                </div>
+            }
         </div>
     )
 }

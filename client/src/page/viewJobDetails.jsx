@@ -25,8 +25,8 @@ const ViewJobDetails = () => {
             setJobDetails(null);
         })
     },[id]);
-    console.log(jobDetails);
-  return (
+
+    return (
     <div>
       <Header />
       <div className="view-job-details-container">
@@ -48,7 +48,7 @@ const ViewJobDetails = () => {
                 {jobDetails?.location} <span>&#124;</span> India
               </h4>
             </div>
-            <button className="edit-job-btn">Edit Job</button>
+            {localStorage.getItem('token') && <button className="edit-job-btn">Edit Job</button>}
           </div>
           <div className="stipend-duration">
             <div className="stipend-main">

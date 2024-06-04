@@ -34,7 +34,6 @@ const Login = () =>{
     const loginUser = async (e) => {
         e.preventDefault();
         const response = await signIn(loginData);
-        console.log(response);
         if(response.status===200){
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('userId', response.data.userId);

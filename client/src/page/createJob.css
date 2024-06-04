@@ -34,7 +34,7 @@
     line-height: 30.38px;
 }
 
-.create-job-form-part div input, select {
+.create-job-form-part div input, select, textarea {
     font-family: 'DM Sans';
     font-size: 15.65px;
     font-weight: 500;
@@ -50,8 +50,12 @@
 }
 
 .create-job-form-part div select {
-    width: 136.26px;
+    width: 458.23px;
     height: 38.67px;
+}
+
+.create-job-form-part div textarea {
+    width: 438.23px;
 }
 
 .create-job-image-part {
